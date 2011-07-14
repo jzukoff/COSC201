@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0075)http://cs.colgate.edu/faculty/nevison/cs201web/homework/cs201homework3.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>COSC 201: Homework 3</title>
+<link href="./COSC 201  Homework 3_files/maroon.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="reverse">
+<h1>COSC 201: Computer Organization</h1>
+<h2>Homework 3: Logic Circuits</h2>
+</div>
+
+<hr>
+
+
+<p>1. Design a transistor circuit to implement an XOR gate: if both inputs are the same, then 0 is output, if they are different, then 1 is output. Use as few transistors as possible. (One way to start is to use the logic that (A XOR B) = (A OR B) AND Not(A AND B). This may or may not be helpful.)</p>
+<hr>
+<p>2(a). Consider a circuit that has two single bit data inputs, A and B, and two single bit data outputs, C and D. The circuit has a single bit control line, S and works as follows:</p>
+<p>If S = 0, then C = A and D = B.</p>
+<p>If S = 1, then C = B and D = A.</p>
+<p>&nbsp;</p>
+<p>2(b) Consider the following network (called a butterfly network), where the Ai represent incoming streams of data and the Bi the outgoing streams of data. Assume that each switch works as specified in part (a). Assume that each switch has a separate control line and that these control lines are specified <strong>r.c</strong> where <strong>r</strong> is the row (numbered 0 to 3 from the top) and <strong>c</strong> is the column (numbered 0 to 3, left to right). </p>
+<p align="center"><img src="./COSC 201  Homework 3_files/network.PNG" alt="network" width="340" height="224"></p>
+<p align="left">Give switch settings that would route A0 to B5, leaving unspecified any switches that are not needed. </p>
+<p align="left">Give switch settings that would route A6 to B0. Can every input be connected to every output?</p>
+<p align="left">Give routings for two A streams to two B streams that are incompatible (cannot be satisfied at the same time).</p>
+<hr>
+
+<p>3. Consider the addition of two two-bit numbers (no carry-in). This would have four inputs and three outputs (the two-bit result and a carry-out bit).</p>
+<p>(a) Write out the 16-line truth table. (four columns for input, three for output).</p>
+<p>(b) Sketch the PLA circuit (using the lines and dot notation).</p>
+<p>(c) How many lines would be needed for 32-bit addition, including carry-in and carry-out bits. Could this be done on a PLA?</p>
+
+
+
+<!-- $Id: index.html,v 1.2 2003/08/27 21:31:45 parks Exp $ 
+  Author: Chris Nevison
+ Revised: Thomas M. Parks
+-->
+</body></html>

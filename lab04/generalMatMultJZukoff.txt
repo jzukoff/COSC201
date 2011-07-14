@@ -1,0 +1,7 @@
+1.
+I am assuming in this question you mean to ask about $a3 not $t3 since $a3 is the program counter.
+
+If i change the value in the memory location specified by $a3 to a higher number, the next time my code fetches a job it is the value I inputted for $a3. for example, if to start, I change the value to 2 rather than 0, the starting i would be 0, and the starting j would be 2. This is because the value returned for the program counter would be 0010, with the right most bits becoming j and the leftmost bits becoming i. If i change the value in the memory location between the load-linked and store conditional instructions, the code is unaffected. This is because mips is not built to handle parallel processes and thus treats ll and sc as lw and sw respectively.
+
+2. 
+In order to allow the code to handle n x n matrices that were larger (powers of two), I would need to change the condition to stop the program by testing the value of the program counter to allow for the program to run until the counter was 2^n - 1. I would also need to adjust the masking and shifting of the value in the counter (in order to get i and j) to account for larger values. The code in loop 3 would also have to be adjusted so that rather than 4 being the size of the row, n was the size. This would be changed by adjusting the sll calls.

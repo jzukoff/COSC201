@@ -1,0 +1,3 @@
+jal jumps to the section of the program specified by a parameter AND stores its address in $ra, essentially the return address.
+
+jr thus jumps to any address specified by a register parameter, which in this case is given by $ra, thus returning to the point where we previously used jal.
